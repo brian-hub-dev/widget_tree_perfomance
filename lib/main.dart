@@ -63,6 +63,17 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.white70,
           ),
         ),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(75.0),
+          child: Container(
+            color: Colors.lightGreen.shade100,
+            height: 75.0,
+            width: double.infinity,
+            child: const Center(
+              child: Text('Bottom'),
+            ),
+          ),
+        ),
       ),
       body: Center(
         child: Column(
@@ -78,6 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
